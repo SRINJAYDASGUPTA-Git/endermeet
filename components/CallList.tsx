@@ -1,5 +1,5 @@
 "use client"
-import { useGetCalls } from '@/hooks/usegetCalls';
+import { useGetCalls } from '@/hooks/useGetCalls';
 import { Call, CallRecording } from '@stream-io/video-react-sdk';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
