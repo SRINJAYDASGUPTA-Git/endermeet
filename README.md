@@ -45,7 +45,7 @@ This will start the application at http://localhost:3000 by default.
 
 ## Additional Notes:🗒️
 
-- You will need to configure Clerk and Stream API with your own project credentials for authentication and real-time functionality. Refer to their respective documentation for setup instructions.
+- You will need to configure [**Clerk**](https://clerk.com/) and [**Stream API**](https://getstream.io/try-for-free/) with your own project credentials for authentication and real-time functionality. Refer to their respective documentation for setup instructions.
 - A `.env.local` file can be created in the project root to store sensitive environment variables.
 
 ## Contributing📝
