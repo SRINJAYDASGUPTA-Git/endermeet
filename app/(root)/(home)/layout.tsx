@@ -17,7 +17,15 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
           <div className="w-full">{children}</div>
         </section>
       </div>
-      Footer
+      <div className="flex flex-col text-sm gap-2">
+        <p>
+          All rights reserved.
+        </p>
+        <p>
+          Mader with ❤️ by Srinjay
+        </p>
+        
+      </div>
     </main>
   );
 };
