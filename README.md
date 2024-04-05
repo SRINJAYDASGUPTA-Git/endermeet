@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EnderMeet: The Future of Video Conferencing 🌐🚀
 
-## Getting Started
+EnderMeet is a secure, real-time video conferencing application built with a focus on user experience and flexibility. It empowers users to hold seamless meetings with low latency and no time restrictions, fostering effective communication and collaboration. 💼💬
 
-First, run the development server:
+## Features
+- **Effortless Setup**: Secure login with Clerk, one-click meeting creation, and easy joining via links. 🔒🔗
+- **Ultimate Control**: Granular control over recordings, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share). 🎥😄🖥️🔇
+- **Flexibility**: Schedule meetings in advance, access past recordings, and utilize personal meeting rooms for instant calls. 🗓️📹🏠
+- **Seamless on Any Device**: Responsive design ensures a smooth experience on desktops, tablets, and phones. 📱💻🖥️
+- **Real-time Collaboration**: Enjoy lag-free video and audio communication for efficient meetings. ⏱️👥
+- **No Time Restrictions**: Host meetings for as long as you need without limitations. ⏰❌
+- **Security & Privacy**: Built with secure authentication and data handling practices to ensure user trust. 🔐💻
+
+## Tech Stack⚙️
+### Frontend 💻
+- Next.js
+- TypeScript
+- Shadan UI
+- Tailwind CSS
+
+### Backend 🔨
+- Clerk (Authentication)
+- Stream API (Real-time communication)
+
+## Installation & Usage
+### Prerequisites
+- Node.js and npm (or yarn) installed on your system.
+
+### Clone the repository
+```bash
+git clone https://github.com/SRINJAYDASGUPTA-Git/endermeet.git
+```
+Install dependencies:
+
+```bash
+cd endermeet
+npm install
+```
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+This will start the application at http://localhost:3000 by default.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Additional Notes:🗒️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- You will need to configure Clerk and Stream API with your own project credentials for authentication and real-time functionality. Refer to their respective documentation for setup instructions.
+- A `.env.local` file can be created in the project root to store sensitive environment variables.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing📝
+- We welcome contributions to EnderMeet! Please see the [contributing guide](CONTRIBUTING.md) file for guidelines on how to contribute code, report issues, and participate in the project.🛠️🤝
 
-## Learn More
+## License📜
+This project is licensed under the ⚖️ MIT License. See the [LICENSE](LICENSE) file for details.📜🔏
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*Let's make virtual meetings a breeze!*💨💼
