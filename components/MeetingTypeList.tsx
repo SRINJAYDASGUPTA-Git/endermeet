@@ -2,15 +2,18 @@
 
 import { useState } from "react";
 import Card from "./Card";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter} from "next/navigation";
 import MeetingModel from "./MeetingModel";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "./ui/textarea";
 import ReactDatePicker from "react-datepicker";
+
 const MeetingTypeList = () => {
   const { toast } = useToast();
+  const hostname = typeof window !== 'undefined' && window.location.hostname ? window.location.hostname : '';
+  console.log('hostname', hostname)
   const [meetingState, setMeetingState] = useState<
     "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
   >();
@@ -67,7 +70,7 @@ const MeetingTypeList = () => {
     }
   };
 
-  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`;
+  const meetingLink = `${hostname}/meeting/${callDetails?.id}`;
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 ">
       <Card
