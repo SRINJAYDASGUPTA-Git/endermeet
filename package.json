@@ -24,7 +24,8 @@
     "react-datepicker": "^6.6.0",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vercel": "^33.6.3"
   },
   "devDependencies": {
     "@types/node": "^20",
