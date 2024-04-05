@@ -13,14 +13,14 @@ EnderMeet is a secure, real-time video conferencing application built with a foc
 
 ## Tech Stack⚙️
 ### Frontend 💻
-- Next.js
-- TypeScript
-- Shadan UI
-- Tailwind CSS
+- [**Next.js**](https://nextjs.org/)
+- [**TypeScript**](https://www.typescriptlang.org/)
+- [**Shadcn UI**](https://ui.shadcn.com/)
+- [**Tailwind CSS**](https://tailwindcss.com/)
 
 ### Backend 🔨
-- Clerk (Authentication)
-- Stream API (Real-time communication)
+- [**Clerk**](https://clerk.com/) (Authentication)
+- [**Stream API**](https://getstream.io/try-for-free/) (Real-time communication)
 
 ## Installation & Usage
 ### Prerequisites
@@ -54,4 +54,4 @@ This will start the application at http://localhost:3000 by default.
 ## License📜
 This project is licensed under the ⚖️ MIT License. See the [LICENSE](LICENSE) file for details.📜🔏
 
-*Let's make virtual meetings a breeze!*💨💼
+_Let's make virtual meetings a breeze!_ 💨💼
