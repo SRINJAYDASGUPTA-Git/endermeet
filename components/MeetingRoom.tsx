@@ -19,17 +19,21 @@ import {
   SpeakerLayout,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
-import { LayoutList, Users } from "lucide-react";
+import { LayoutList, Users, Copy } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 import EndCallButton from "./EndCallButton";
 import Loader from "./Loader";
+import { useToast } from "./ui/use-toast";
 
 type CallLayoutType = "grid" | "speaker-left" | "speaker-right";
 
 const MeetingRoom = () => {
+  const { toast } = useToast();
     const router = useRouter();
     const searchParams = useSearchParams();
+    const meetingLink = typeof window !== 'undefined' && window.location.href ? window.location.href : '';
+    console.log('meetingLink', meetingLink)
     const isPersonalRoom = !!searchParams.get('personal')
   const [layout, setLayout] = useState<CallLayoutType>("speaker-left");
   const [showParticipants, setShowParticipants] = useState(false);
@@ -65,9 +69,20 @@ const MeetingRoom = () => {
       </div>
       <div className="fixed bottom-0 flex-center w-full gap-5 flex-wrap">
         <CallControls onLeave={()=> router.push('/')}/>
+          <div className="cursor-pointer 
+            rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]"
+            onClick={() => {
+              navigator.clipboard.writeText(meetingLink)
+              toast({
+                title: "Meeting Link Copied",
+              })
+            }}>
+              <Copy size={20} className="text-white" />
+          </div>
         <DropdownMenu>
           <div className="flex items-center">
-            <DropdownMenuTrigger className="cursor-pointer rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]">
+            <DropdownMenuTrigger className="cursor-pointer 
+            rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]">
               <LayoutList size={20} className="text-white" />
             </DropdownMenuTrigger>
           </div>
