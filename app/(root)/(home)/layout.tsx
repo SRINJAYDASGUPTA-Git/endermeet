@@ -17,7 +17,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
           <div className="w-full">{children}</div>
         </section>
       </div>
-      <div className="flex flex-col text-sm gap-2 text-white">
+      <div className="flex flex-center flex-col text-sm gap-2 text-white">
         <p>
           All rights reserved.
         </p>
