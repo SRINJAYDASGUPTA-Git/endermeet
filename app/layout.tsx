@@ -8,8 +8,25 @@ import 'react-datepicker/dist/react-datepicker.css'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EnderMeet",
-  description: "Enderman Efficient Video Conferencing Platform",
+  title: "EnderMeet - Secure, Real-Time Video Conferencing",
+  description: "EnderMeet is a secure, real-time video conferencing application with a focus on user experience and flexibility. Hold seamless meetings with low latency and no time restrictions.",
+  keywords: [
+    "EnderMeet",
+    "Endermeet",
+    "endermeet",
+    "Video Conferencing",
+    "Efficient",
+    "Secure Video Conferencing",
+    "Real-time Video Meetings",
+    "Seamless Online Meetings",
+    "Low Latency Video Calls",
+    "Unlimited Meeting Duration",
+    "Video Conference Application",
+    "Online Collaboration Tool",
+    "Virtual Meeting Software",
+    "HD Video Conferencing",
+    "Cross-Platform Video Meetings",
+  ],
 };
 
 export default function RootLayout({
