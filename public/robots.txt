@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /sign-in/*
+Disallow: /sign-up/*
+Disallow: /meeting/*
+Disallow: /recordings
+Allow: /
+Sitemap: https://endermeet.srinjaydg.in/sitemap.xml

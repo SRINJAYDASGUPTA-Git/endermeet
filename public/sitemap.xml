@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://endermeet.srinjaydg.in/</loc>
+    <lastmod>2024-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://endermeet.srinjaydg.in/previous</loc>
+    <lastmod>2024-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://endermeet.srinjaydg.in/recordings</loc>
+    <lastmod>2024-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://endermeet.srinjaydg.in/upcoming</loc>
+      <lastmod>2024-06-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  
+  <!-- Add more URLs for your other pages -->
+</urlset>
